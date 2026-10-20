@@ -1,0 +1,92 @@
+# FFII WSC / RPGOne Restoration
+#
+# This repository is public. Exclude commercial game images, personal game
+# progress, emulator memory dumps, backups, credentials, and generated builds.
+# Distributable ROM-difference patches (.ips/.bps/.ups/.xdelta) are intentionally
+# NOT ignored; inspect every release archive before publishing it.
+#
+# WARNING: .gitignore only prevents Git from adding matching UNTRACKED files.
+# It does not remove files already committed, protect private text in .md/.py,
+# or make the repository private.
+
+# Copyrighted game images and extracted binary images
+*.[wW][sS]
+*.[wW][sS][cC]
+*.[rR][oO][mM]
+*.[bB][iI][nN]
+*.[gG][bB]
+*.[gG][bB][cC]
+*.[gG][bB][aA]
+*.[nN][eE][sS]
+*.[sS][fF][cC]
+*.[sS][mM][cC]
+*.[iI][sS][oO]
+*.[cC][hH][dD]
+*.[cC][uU][eE]
+*.[iI][mM][gG]
+*.nsp
+*.xci
+
+# User progress, emulator states and dumps
+*.[sS][aA][vV]
+*.[sS][rR][mM]
+*.[sS][tT][aA][tT][eE]
+*.state.*
+*.[0-9][0-9][0-9]
+*.dmp
+*.core
+*.dump
+
+# Archives: may contain copyrighted ROMs, binaries or save data.
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Local workspaces, builds, and scratch output
+/roms/
+/ROMs/
+/originals/
+/input/
+/inputs/
+/private/
+/backups/
+/build/
+/dist/
+/output/
+/out/
+/tmp/
+/scratch/
+/cache/
+/local/
+/workspace/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Python/editor/system artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
